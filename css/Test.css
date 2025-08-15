@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header */
+  .header {
+    background-color: #f44336; /* แดง */
+    text-align: center;
+    padding: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+  .navbar a:last-child {
+    margin-right: 0;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+
+  .search-container button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #e91e63; /* ชมพูเข้ม */
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .search-container button:hover {
+    background-color: #d81b60;
+  }
+
+  /* Main Layout */
+  .main {
+    display: flex;
+    padding: 20px;
+  }
+
+  .content {
+    flex: 3;
+    margin-right: 20px;
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: #ffeb3b; /* เหลือง */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sidebar a {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .sidebar a:hover {
+    background-color: #555;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  table th {
+    background-color: #f44336; /* แดงหัวตาราง */
+    color: white;
+  }
+
+  .total {
+    background-color: #e91e63; /* ชมพูแถวรวม */
+    color: white;
+    font-weight: bold;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #e91e63; /* ชมพู */
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+@media (max-width: 700px) {
+    .column {
+    width: 100%;
+    }
+}
